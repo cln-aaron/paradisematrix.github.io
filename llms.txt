@@ -1,0 +1,72 @@
+# Paradise Matrix
+
+> Paradise Matrix Pte. Ltd. is a Singapore company that builds and commercialises
+> agentic AI for organisations that must account for what their systems do. It develops
+> the RealRelay.ai platform and vertical AI agents, beginning with cybersecurity and
+> education, and operates from Singapore across Asia and the Gulf.
+
+## What agentic AI means here
+
+An AI agent perceives its context, plans a sequence of steps, uses tools and carries out
+multi-step tasks with limited human intervention. A vertical is an agent, or a group of
+them, carrying the data, tools and constraints of a single domain. All verticals run on
+one shared platform core.
+
+## RealRelay.ai
+
+A platform for creating, governing and deploying AI agents without writing code.
+
+- Agents are assembled by describing them, so the people who understand a workflow build it.
+- Requests are routed to a model chosen per task, weighing speed, cost, capability and
+  sensitivity, across third-party and open-weight models.
+- Policy, identity and audit sit in the execution path, not in a report afterwards. Prompt,
+  plan, tool call, model selected, output and approver are recorded in sequence.
+- Security validation is carried inside the platform. An autonomous validation agent
+  continuously tests the agents built on it, within a scope the customer authorises,
+  reasons the way an attacker would to surface real exposures, and returns a risk rating
+  with supporting evidence and remediation guidance, then re-tests after a fix.
+- Deployment: managed cloud, customer infrastructure, or fully disconnected. On
+  on-premises and air-gapped tiers, open-weight models run locally with no outbound
+  telemetry. This does not apply to the multi-model cloud tier, which routes to
+  third-party model providers.
+
+## Domains
+
+- Cybersecurity: alert triage, automated adversary simulation, threat
+  monitoring and analysis, incident response support.
+- Education: a learning environment where students across faculties build agents for the
+  discipline they are studying, lecturers work in the same space rather than reviewing at
+  submission, and classroom recordings and academic performance signals are turned into
+  insight educators can act on. The institution retains what each cohort creates.
+- Fintech: decision intelligence that takes apart investment cases and sales performance
+  before capital is committed; anti-money-laundering and know-your-customer review;
+  entity research mapping who sits behind a counterparty and the risk attached to them;
+  and deployment inside an institution's own environment with customer-held keys.
+
+## Ecosystem
+
+- RealRelay.ai — the platform. https://www.realrelay.ai
+- CWG Innovations — engineering partner, Singapore. https://www.cwgsg.ai
+- Edvance International Holdings — cybersecurity group, Hong Kong, listed on the Main
+  Board of the Stock Exchange of Hong Kong. https://www.edvanceintl.com
+
+## Stated limits
+
+Paradise Matrix does not currently hold formal security certifications and does not
+describe itself as certified for anything it has not earned. Security, sovereignty and
+compliance characteristics vary by product, release stage and deployment tier, and are
+governed by the customer agreement.
+
+## Pages
+
+- [Home](https://paradisematrix.sg/index.html): positioning, domains, platform, ecosystem, FAQ
+- [Who We Are](https://paradisematrix.sg/who-we-are.html): story, principles, partners, current stage
+- [What We Do](https://paradisematrix.sg/what-we-do.html): cybersecurity and education domains, go-to-market
+- [Our Platform](https://paradisematrix.sg/realrelay.html): capabilities, architecture, built-in security, deployment, governance
+- [Newsroom](https://paradisematrix.sg/newsroom.html): updates and media contacts
+- [Careers](https://paradisematrix.sg/careers.html): open roles in Singapore
+- [Contact](https://paradisematrix.sg/contact.html): enquiries, partnerships, working with our engineers
+
+## Contact
+
+Paradise Matrix Pte. Ltd., Singapore. enquiries@paradisematrix.ai
