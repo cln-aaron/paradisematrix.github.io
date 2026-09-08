@@ -10,7 +10,7 @@ Served by GitHub Pages from the repository root.
 
 ```
 index.html            Home
-who-we-are.html       Company, principles, partners, how we work
+who-we-are.html       Company, story, market, principles, partners
 what-we-do.html       Cybersecurity, education and fintech domains, go-to-market
 realrelay.html        Platform capabilities, architecture, deployment, governance
 newsroom.html         Updates and media contacts
@@ -42,9 +42,11 @@ re-skins from that block alone.
 
 | Token | Value | Role |
 | --- | --- | --- |
-| `--deep` | `#4d12a6` | Dominant brand colour: dark bands, statements, buttons |
-| `--deep-ink` | `#260858` | Deepest ground, footer |
-| `--accent` | `#d6001c` | Labels, links, rules, arrows |
+| `--deep` | `#002060` | Dominant brand colour: dark bands, statements, buttons |
+| `--deep-ink` | `#001233` | Deepest ground, footer |
+| `--accent` | `#ce00a5` | Labels, links, rules, arrows |
+| `--logo-ink` / `--logo-pink` | `#002060` / `#dd00b0` | Logo artwork only |
+| `--wash-*` | raw RGB channels | Hero photography wash, so it re-tints with the palette |
 | `--offwhite` | `#f2f2f2` | Alternating section band |
 | `--ink` / `--grey` | `#101010` / `#676767` | Body text |
 | `--rule` | `#e0e0e0` | Hairlines |

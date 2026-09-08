@@ -3,7 +3,9 @@
 > Paradise Matrix Pte. Ltd. is a Singapore company that builds and commercialises
 > agentic AI for organisations that must account for what their systems do. It develops
 > the RealRelay.ai platform and vertical AI agents, beginning with cybersecurity and
-> education, and operates from Singapore across Asia and the Gulf.
+> education, and operates from Singapore across Asia and the Gulf. Its parent company is
+> Edvance International Holdings Limited, a cybersecurity group listed on the Main Board
+> of the Stock Exchange of Hong Kong.
 
 ## What agentic AI means here
 
@@ -16,11 +18,11 @@ one shared platform core.
 
 A platform for creating, governing and deploying AI agents without writing code.
 
+- Policy, identity and audit sit in the execution path, not in a report afterwards. Prompt,
+  plan, tool call, model selected, output and approver are recorded in sequence.
 - Agents are assembled by describing them, so the people who understand a workflow build it.
 - Requests are routed to a model chosen per task, weighing speed, cost, capability and
   sensitivity, across third-party and open-weight models.
-- Policy, identity and audit sit in the execution path, not in a report afterwards. Prompt,
-  plan, tool call, model selected, output and approver are recorded in sequence.
 - Security validation is carried inside the platform. An autonomous validation agent
   continuously tests the agents built on it, within a scope the customer authorises,
   reasons the way an attacker would to surface real exposures, and returns a risk rating
@@ -43,12 +45,22 @@ A platform for creating, governing and deploying AI agents without writing code.
   entity research mapping who sits behind a counterparty and the risk attached to them;
   and deployment inside an institution's own environment with customer-held keys.
 
+## Markets
+
+Singapore is the home and reference market: a domain ships there first and the rest of
+the footprint is measured against it. Beyond Singapore: the ten ASEAN economies, Hong
+Kong (the parent company's base and the route into North Asia), Japan and the United Arab
+Emirates. What these markets share is the condition the platform was built for —
+regulated industries, data that must stay in country, and institutions answerable for the
+systems they run.
+
 ## Ecosystem
 
 - RealRelay.ai — the platform. https://www.realrelay.ai
 - CWG Innovations — engineering partner, Singapore. https://www.cwgsg.ai
-- Edvance International Holdings — cybersecurity group, Hong Kong, listed on the Main
-  Board of the Stock Exchange of Hong Kong. https://www.edvanceintl.com
+- Edvance International Holdings — parent company of Paradise Matrix. A cybersecurity
+  group headquartered in Hong Kong and listed on the Main Board of the Stock Exchange of
+  Hong Kong. https://www.edvanceintl.com
 
 ## Stated limits
 

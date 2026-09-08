@@ -8,11 +8,17 @@
 
 :root {
   /* Brand ---------------------------------------------------------------- */
-  --deep:        #4d12a6;   /* dominant brand colour: dark bands, headings  */
-  --deep-2:      #3d0e85;   /* deeper shade for hovers and gradients-free   */
-  --deep-ink:    #260858;   /* near-black purple, footer and overlays       */
-  --accent:      #d6001c;   /* links, labels, rules, arrows                 */
-  --accent-2:    #b00018;
+  --deep:        #002060;   /* dominant brand colour: dark bands, headings  */
+  --deep-2:      #001a4e;   /* deeper shade for hovers                      */
+  --deep-ink:    #001233;   /* near-black navy, footer and overlays         */
+  --accent:      #ce00a5;   /* links, labels, rules, arrows                 */
+  --accent-2:    #a80087;
+
+  /* The hero wash is built from these as raw channels, so the photography
+     re-tints with the palette instead of being baked to one brand colour. */
+  --wash-dark:   0, 18, 51;
+  --wash-brand:  0, 32, 96;
+  --wash-accent: 206, 0, 165;
 
   /* Neutrals ------------------------------------------------------------- */
   --white:       #ffffff;
@@ -290,6 +296,22 @@ p:last-child { margin-bottom: 0; }
 .site-header.on-dark:not(.is-solid) .brand__logo { --pm-ink: #ffffff; }
 .site-header.on-dark:not(.is-solid) .nav-toggle span { background: #fff; }
 
+/* An open menu drops a white panel over the page, so the header has to leave
+   its over-a-dark-hero state whatever the scroll position — otherwise the
+   rules above paint white logo, white links and a white close button onto it. */
+body.nav-open .site-header {
+  background: var(--white);
+  border-bottom-color: var(--rule);
+}
+body.nav-open .site-header.on-dark:not(.is-solid) .nav-link { color: var(--deep); }
+body.nav-open .site-header.on-dark:not(.is-solid) .brand__logo { --pm-ink: var(--logo-ink); }
+body.nav-open .site-header.on-dark:not(.is-solid) .nav-toggle span { background: var(--ink); }
+body.nav-open .site-header.on-dark:not(.is-solid) .nav-cta {
+  background: var(--deep);
+  color: #fff;
+  border-color: var(--deep);
+}
+
 .nav-inner {
   width: 100%;
   max-width: var(--shell);
@@ -425,8 +447,8 @@ body.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-7.5px) rota
   inset: 0;
   z-index: 1;
   background:
-    linear-gradient(180deg, rgba(20,4,48,.58) 0%, rgba(20,4,48,.28) 34%, rgba(20,4,48,.72) 78%, rgba(20,4,48,.88) 100%),
-    linear-gradient(118deg, rgba(77,18,166,.62) 0%, rgba(77,18,166,.28) 55%, rgba(214,0,28,.18) 100%);
+    linear-gradient(180deg, rgba(var(--wash-dark),.58) 0%, rgba(var(--wash-dark),.28) 34%, rgba(var(--wash-dark),.72) 78%, rgba(var(--wash-dark),.88) 100%),
+    linear-gradient(118deg, rgba(var(--wash-brand),.62) 0%, rgba(var(--wash-brand),.28) 55%, rgba(var(--wash-accent),.18) 100%);
 }
 .hero__grain {
   position: absolute;
@@ -868,13 +890,13 @@ body.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-7.5px) rota
 .map { width: 100%; height: auto; display: block; }
 .map__ctx path { fill: #e6e6e8; stroke: none; }
 .map__asean path {
-  fill: #d9cdf0;
+  fill: #ccd6e8;
   stroke: var(--white);
   stroke-width: 1.1;
   stroke-linejoin: round;
   transition: fill .35s var(--ease);
 }
-.map__asean path:hover { fill: #bda6e6; }
+.map__asean path:hover { fill: #9fb2d1; }
 .map__lbl {
   font-family: var(--sans);
   font-size: 15px;
@@ -886,7 +908,7 @@ body.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-7.5px) rota
   stroke-width: 4px;
   stroke-linejoin: round;
 }
-.map__halo { fill: rgba(214,0,28,.12); }
+.map__halo { fill: rgba(var(--wash-accent),.14); }
 .map__ring { fill: none; stroke: var(--accent); stroke-width: 1.5; }
 .map__dot  { fill: var(--accent); }
 .map__lead { stroke: var(--accent); stroke-width: 1.2; }
@@ -908,7 +930,7 @@ body.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-7.5px) rota
 .map-legend span { display: inline-flex; align-items: center; gap: 9px; font-size: 14.5px; color: var(--grey); }
 .map-legend i { width: 11px; height: 11px; border-radius: 50%; flex-shrink: 0; }
 .map-legend .k-home { background: var(--accent); }
-.map-legend .k-asean { background: #d9cdf0; border: 1px solid #bda6e6; }
+.map-legend .k-asean { background: #ccd6e8; border: 1px solid #9fb2d1; }
 @media (max-width: 620px) { .map__lbl, .map__sgsub { font-size: 17px; } .map__sglbl { font-size: 18px; } }
 
 /* ==========================================================================
