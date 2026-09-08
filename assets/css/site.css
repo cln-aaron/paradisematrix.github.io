@@ -1230,6 +1230,7 @@ body.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-7.5px) rota
 /* Partner logos are matched on the size their wordmark reads at, not on the
    height of the file: RealRelay's includes a symbol and a tagline, so an equal
    box would leave its name half the size of the others. */
-.eco-item__logo--rr { height: 66px; }
-.eco-item__logo--cwg { height: 48px; }
+.eco-item__logo--rr,
+.eco-item__logo--cwg { height: 66px; }
+.eco-item__logo--cwg img { max-height: 48px; }
 
