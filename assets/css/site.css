@@ -29,6 +29,10 @@
   --on-deep-muted:  rgba(255,255,255,.72);
   --on-deep-rule:   rgba(255,255,255,.22);
 
+  /* Logo ------------------------------------------------------------------ */
+  --logo-ink:  #002060;
+  --logo-pink: #DD00B0;
+
   /* Type ----------------------------------------------------------------- */
   --serif: "Instrument Serif", Canela, Georgia, "Times New Roman", serif;
   --sans:  "Archivo", "Suisse Int'l", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -282,9 +286,8 @@ p:last-child { margin-bottom: 0; }
   background: var(--white);
   border-bottom-color: var(--rule);
 }
-.site-header.on-dark:not(.is-solid) .brand__name,
 .site-header.on-dark:not(.is-solid) .nav-link { color: #fff; }
-.site-header.on-dark:not(.is-solid) .brand__sub { color: rgba(255,255,255,.7); }
+.site-header.on-dark:not(.is-solid) .brand__logo { --pm-ink: #ffffff; }
 .site-header.on-dark:not(.is-solid) .nav-toggle span { background: #fff; }
 
 .nav-inner {
@@ -297,23 +300,19 @@ p:last-child { margin-bottom: 0; }
   gap: 40px;
 }
 
-.brand { display: flex; align-items: center; gap: 14px; flex-shrink: 0; }
-.brand__mark { width: 32px; height: 32px; }
-.brand__text { display: flex; flex-direction: column; line-height: 1; }
-.brand__name {
-  font-family: var(--serif);
-  font-size: 20px;
-  letter-spacing: -0.01em;
-  color: var(--deep);
+.brand { display: flex; align-items: center; flex-shrink: 0; }
+.pm-logo-defs { position: absolute; width: 0; height: 0; overflow: hidden; }
+
+/* The lockup is one <use> of an inlined symbol, so its colours have to travel
+   as custom properties — ordinary selectors do not cross the shadow boundary. */
+.brand__logo {
+  display: block;
+  height: 40px;
+  width: auto;
+  --pm-ink: var(--logo-ink);
+  --pm-pink: var(--logo-pink);
 }
-.brand__sub {
-  margin-top: 5px;
-  font-size: 9.5px;
-  font-weight: 500;
-  letter-spacing: .18em;
-  text-transform: uppercase;
-  color: var(--grey-2);
-}
+@media (max-width: 720px) { .brand__logo { height: 34px; } }
 
 .nav-primary { display: flex; align-items: center; gap: 34px; margin-left: auto; }
 
@@ -749,8 +748,7 @@ body.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-7.5px) rota
   color: var(--on-deep-muted);
   padding-block: clamp(56px, 6vw, 92px) 34px;
 }
-.site-footer .brand__name { color: #fff; }
-.site-footer .brand__sub { color: rgba(255,255,255,.55); }
+.site-footer .brand__logo { --pm-ink: #ffffff; }
 .footer-col h4, .footer-col .footer-h {
   margin-bottom: 22px;
   font-size: 11px; font-weight: 500; letter-spacing: .16em;
@@ -814,15 +812,8 @@ body.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-7.5px) rota
    Brand mark — adapts to light and dark grounds
    ========================================================================== */
 
-.brand__mark .m-a { fill: var(--deep); }
-.brand__mark .m-b { fill: var(--deep); opacity: .28; }
-.brand__mark .m-c { fill: var(--accent); }
-
-.site-header.on-dark:not(.is-solid) .brand__mark .m-a { fill: #fff; }
-.site-header.on-dark:not(.is-solid) .brand__mark .m-b { fill: #fff; opacity: .42; }
-
-.site-footer .brand__mark .m-a { fill: #fff; }
-.site-footer .brand__mark .m-b { fill: #fff; opacity: .42; }
+/* Colour now travels through --pm-ink / --pm-pink on .brand__logo, since a
+   <use> reference puts the artwork in a shadow tree that selectors cannot reach. */
 
 /* Header CTA inverts over a dark hero */
 .site-header.on-dark:not(.is-solid) .nav-cta {
