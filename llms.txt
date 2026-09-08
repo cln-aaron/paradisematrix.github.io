@@ -37,8 +37,8 @@ A platform for creating, governing and deploying AI agents without writing code.
 - Cybersecurity: alert triage, automated adversary simulation, threat
   monitoring and analysis, incident response support.
 - Education: a learning environment where students across faculties build agents for the
-  discipline they are studying, lecturers work in the same space rather than reviewing at
-  submission, and classroom recordings and academic performance signals are turned into
+  discipline they are studying, lecturers work in the same space and shape a project as it
+  develops instead of reviewing it at submission, and classroom recordings and academic performance signals are turned into
   insight educators can act on. The institution retains what each cohort creates.
 - Fintech: decision intelligence that takes apart investment cases and sales performance
   before capital is committed; anti-money-laundering and know-your-customer review;
