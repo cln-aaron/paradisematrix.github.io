@@ -784,6 +784,8 @@ body.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-7.5px) rota
 .footer-col a:hover { color: #fff; }
 .footer-about p { margin-top: 24px; font-size: 15px; color: var(--on-deep-muted); max-width: 34ch; }
 .footer-addr { margin-top: 22px; font-style: normal; font-size: 15px; line-height: 1.75; color: rgba(255,255,255,.55); }
+.site-footer .footer-addr a { color: rgba(255,255,255,.72); }
+.site-footer .footer-addr a:hover { color: #fff; }
 .footer-bottom {
   display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px;
   margin-top: clamp(44px, 5vw, 72px); padding-top: 30px;
